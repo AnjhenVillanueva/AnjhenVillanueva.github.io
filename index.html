@@ -12,13 +12,16 @@
 </head>
 <body>
     
+<!-- start -->
+<section class="yellow-bg">
+    <img src="./assets/images/final.png" alt="">
 <header class="container header">
 
-<div><h3>Anjhen Villanueva</h3></div>
+<div><a href="index.html"><h3>Anjhen Villanueva</h3></a></div>
 <div class="navigation">
-    <a href="#about-me"><p>About</p></a>
+    <a href="about.html"><p>About</p></a>
     <a href="#project"><p>Projects</p></a>
-   <a href=""> <p>Contact</p></a>
+   <a href="#contact"> <p>Contact</p></a>
 </div>
 
 </header>
@@ -26,15 +29,24 @@
 
 <div class="container-homepage">
     <div class="hello">
-        <p>Hello World,</p>
-        <h1>I am Anjhen Villanueva</h1>
-        <h3>A Full Stack Web developer</p>
+        <p>UI/UX Designer</p>
+        <h1>Hello, my name <br> is Anjhen Villanueva</h1>
+        <p>I am a full stack developer with a Bachelor’s degree in Information Systems. With a strong foundation in both front-end and back-end technologies, I am adept at creating seamless, efficient, and user-friendly applications.</p>
+
+            <div class="buttons">
+                <button>Projects</button>
+                <button>LinkedIn</button>
+            </div>
+
     </div>
     <div class="hello">
- <img src="./assets/images/Villanueva, Anjhen.png" alt="">
+
     </div>
 
+
 </div><br>
+</section>
+<!-- end -->
 
 
 
@@ -45,58 +57,109 @@
     <div class="project-text">
         <h3>E-Commerce Web App for Blackshift Clothing</h3>
             <p>An e-commerce web application design for browsing clothing brand in the philippines</p>
-    </div>
+            <div class="buttons button-project">
+                <button onclick="showIframe()">View Project</button>
+            </div>
 
-    <div class="project-text">
-        <h3>Calculator</h3>
-            <p>An e-commerce web application design for browsing clothing brand in the philippines</p>
-    </div>
+            <div id="overlay" onclick="closeIframe()"></div>
 
-    </div>
-    <div class="project-box">
+            <div id="iframeContainer">
+                <button id="closeButton" onclick="closeIframe()">Close</button>
+                <iframe src="https://www.youtube.com/embed/bdMaQM3RW_w" frameborder="0" allowfullscreen></iframe>
+            </div>
 
-    <div class="project-text">
-        <h3>Universty of Rizal System Portal</h3>
-            <p>A University Web Application Portal designed for the students and teachers.</p>
-    </div>
+        </div>
 
-    <div class="project-text">
-        <h3>Barangay Management Information System</h3>
-            <p>A web application design for the barangay in the philippines for public records</p>
+    <div class="project-img">
+        <img src="./assets/images/blackshift.png" alt="">
     </div>
 
 </div>
+
+<!-- 2nd -->
+
+<div class="project-box">
+
+
+    <div class="project-img">
+        <img class="left" src="./assets/images/sample.jpg" alt="">
+    </div>
+
+    <div class="project-text">
+        <h3>E-Commerce Web App for Blackshift Clothing</h3>
+            <p>An e-commerce web application design for browsing clothing brand in the philippines</p>
+            <div class="buttons button-project">
+
+                <button>View Project</button>
+            </div>
+        </div>
+
+</div>
+
+<div class="project-box">
+    <div class="project-text">
+        <h3>E-Commerce Web App for Blackshift Clothing</h3>
+            <p>An e-commerce web application design for browsing clothing brand in the philippines</p>
+            <div class="buttons button-project">
+
+                <button>View Project</button>
+            </div>
+        </div>
+
+    <div class="project-img">
+        <img src="./assets/images/sample.jpg" alt="">
+    </div>
+
+</div>
+
 
 </section><br>
 
-<section class="container about" id="about-me">
-<h2>About Me</h2>
+<section class="container projects" id="">
+    <h2>Projects</h2>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium venenatis bibendum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-    Aliquam erat volutpat. Sed placerat felis nec nulla accumsan imperdiet. 
-    Proin cursus dui volutpat magna elementum tristique. Mauris eleifend imperdiet vehicula. Aliquam nisi ex, elementum a 
-    imperdiet quis, dictum eget lacus.</p>
+    <div class="form-container">
+        <form action="/submit" method="post">
 
-<div>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
 
-</div>
-
-
-</section>
+    </section>
 
 <footer>
-    <div class="social-icons">
-        <a href="https://www.facebook.com" target="_blank" class="social-icon">
+    <div class="social-icons" id="contact">
+        <a href="https://www.facebook.com/anjhen.villanueva.02" target="_blank" class="social-icon">
             <i class="fa-brands fa-facebook"></i>
         </a>
-        <a href="https://www.linkedin.com" target="_blank" class="social-icon">
+        <a href="https://www.linkedin.com/in/anjhen-villanueva-034610216/" target="_blank" class="social-icon">
             <i class="fa-brands fa-linkedin-in"></i>
         </a>
         <a href="https://www.github.com" target="_blank" class="social-icon">
             <i class="fa-brands fa-github"></i>
         </a>
     </div>
+    <div class="social-icons">
+        <p>Anjhen Villanueva 2024</p>
+    </div>
 </footer>
+
+
+<script src="./script.js"></script>
 
 </body>
 </html>
