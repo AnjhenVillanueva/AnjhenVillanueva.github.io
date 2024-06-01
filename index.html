@@ -30,12 +30,12 @@
 <div class="container-homepage">
     <div class="hello">
         <p>UI/UX Designer</p>
-        <h1>Hello, my name <br> is Anjhen Villanueva</h1>
+        <h1>Hello, My name <br> is Anjhen Villanueva</h1>
         <p>I am a full stack developer with a Bachelor’s degree in Information Systems. With a strong foundation in both front-end and back-end technologies, I am adept at creating seamless, efficient, and user-friendly applications.</p>
 
             <div class="buttons">
-                <button>Projects</button>
-                <button>LinkedIn</button>
+                <button><a href="#project">Projects</a></button>
+                <button><a href="https://www.linkedin.com/in/anjhen-villanueva-034610216/">LinkedIn</a></button>
             </div>
 
     </div>
@@ -52,6 +52,7 @@
 
 <section class="container projects" id="project">
     <h2>Projects</h2>
+<div class="underline"></div>
 
 <div class="project-box">
     <div class="project-text">
@@ -82,12 +83,12 @@
 
 
     <div class="project-img">
-        <img class="left" src="./assets/images/sample.jpg" alt="">
+        <img class="left" src="./assets/images/coffee.png" alt="">
     </div>
 
     <div class="project-text">
-        <h3>E-Commerce Web App for Blackshift Clothing</h3>
-            <p>An e-commerce web application design for browsing clothing brand in the philippines</p>
+        <h3>Coffee Website</h3>
+            <p>A coffee shop website is an online platform that showcases a coffee shop's offerings, atmosphere, and services.</p>
             <div class="buttons button-project">
 
                 <button>View Project</button>
@@ -98,16 +99,23 @@
 
 <div class="project-box">
     <div class="project-text">
-        <h3>E-Commerce Web App for Blackshift Clothing</h3>
-            <p>An e-commerce web application design for browsing clothing brand in the philippines</p>
+        <h3>Tech Store</h3>
+            <p>A gadget store website is an online platform designed to showcase and sell a wide range of electronic gadgets and tech accessories.</p>
             <div class="buttons button-project">
-
-                <button>View Project</button>
+                <button onclick="showIframe()">View Project</button>
             </div>
+
+            <div id="overlay" onclick="closeIframe()"></div>
+
+            <div id="iframeContainer">
+                <button id="closeButton" onclick="closeIframe()">Close</button>
+                <iframe src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+
         </div>
 
     <div class="project-img">
-        <img src="./assets/images/sample.jpg" alt="">
+        <img src="./assets/images/gadget.png" alt="">
     </div>
 
 </div>
@@ -117,6 +125,7 @@
 
 <section class="container projects" id="">
     <h2>Projects</h2>
+    <div class="underline"></div>
 
     <div class="form-container">
         <form action="/submit" method="post">

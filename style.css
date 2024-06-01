@@ -52,7 +52,8 @@ html{
 
 .projects h2{
     text-align: center;
-    margin-bottom: 5%;
+    margin-bottom:0px;
+    /* margin-bottom: 5%; */
 }
 .project-box{
 display: flex;
@@ -63,6 +64,7 @@ align-items: center;
 background-color: white;
 border-radius: 25px;
 margin-bottom: 10%;
+margin-top: 5%;
 }
 
 .project-text{
@@ -354,4 +356,20 @@ z-index: -999 !important;
     border: none;
     padding: 10px;
     cursor: pointer;
+}
+
+button a{
+text-decoration: none;
+color: black;
+}
+
+.underline{
+    height: 3px;
+    width: 100px;
+    background-color:darkorange!important;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+
 }
