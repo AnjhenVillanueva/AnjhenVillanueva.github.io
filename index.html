@@ -1,174 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>ANJHEN</title>
+            <link rel="shortcut icon" type="x-icon" href="Images/navlogo3.png">
+    <script src="https://kit.fontawesome.com/edfe3e9e47.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="Style.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<script src="https://kit.fontawesome.com/ee10905130.js" crossorigin="anonymous"></script>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;900&display=swap" rel="stylesheet">
-    <title>Anjhen Website</title>
-</head>
-<body>
-    
-<!-- start -->
-<section class="yellow-bg">
-    <img src="./assets/images/final.png" alt="">
-<header class="container header">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Koulen&family=Montserrat:wght@100;400;900&family=Smooch&family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+  </head>
 
-<div><a href="index.html"><h3>Anjhen Villanueva</h3></a></div>
-<div class="navigation">
-    <a href="about.html"><p>About</p></a>
-    <a href="#project"><p>Projects</p></a>
-   <a href="#contact"> <p>Contact</p></a>
+  <body>
+<section id="color-section">
+
+  <div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom"
+     data-aos-duration="1000">
+  <nav>
+    <a  href="Index.html" class="logo"><img class="anjhen" src="Images/navlogo3.png"></a>
+    <ul>
+      <li ><a id="nav1" href="Index.html" >HOME</a></li>
+      <li><a id="nav1" href="About.html" >ABOUT</a></li>
+      <li><a id="nav1" href="Contact.html">CONTACT</a></li>
+    </ul>
+
+
+  </nav></div>
+
+<div class="text-container">
+  <div data-aos="fade-right"
+  data-aos-offset="300"
+  data-aos-easing="ease-in-sine"
+  data-aos-duration="1000">
+  <p id="greet">Hello World!</p>
+<p id="myname">I'm Anjhen Villanueva,</p>
+  <p>A Web Developer.</p>
+
+  <a class="down-cv" href="Files/Villanueva-Anjhen-Resume.pdf" target="_blank"><i class="fa-solid fa-file-arrow-down"></i><span>1</span>VIEW CV</a>
+</div>
 </div>
 
-</header>
+  <img src="Images/navhead2.png" class="model" >
 
-
-<div class="container-homepage">
-    <div class="hello">
-        <p>UI/UX Designer</p>
-        <h1>Hello, My name <br> is Anjhen Villanueva</h1>
-        <p>I am a full stack developer with a Bachelor’s degree in Information Systems. With a strong foundation in both front-end and back-end technologies, I am adept at creating seamless, efficient, and user-friendly applications.</p>
-
-            <div class="buttons">
-                <button><a href="#project">Projects</a></button>
-                <button><a href="https://www.linkedin.com/in/anjhen-villanueva-034610216/">LinkedIn</a></button>
-            </div>
-
-    </div>
-    <div class="hello">
-
-    </div>
-
-
-</div><br>
 </section>
-<!-- end -->
+ 
 
 
 
-<section class="container projects" id="project">
-    <h2>Projects</h2>
-<div class="underline"></div>
 
-<div class="project-box">
-    <div class="project-text">
-        <h3>E-Commerce Web App for Blackshift Clothing</h3>
-            <p>An e-commerce web application design for browsing clothing brand in the philippines</p>
-            <div class="buttons button-project">
-                <button onclick="showIframe()">View Project</button>
-            </div>
+<div data-aos="fade-up"
+     data-aos-duration="3000"><h2>Course Project</h2></div>
 
-            <div id="overlay" onclick="closeIframe()"></div>
+<div data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+<div class="skill-row">
+  <img class="skill-image-left" src="Images/blackshift.png" alt="">
+  <h3>BlackShift Clothing</h3>
+  <p class="portfolio-p">An E-Commerce website for BlackShift Clothing which sells items of ready-made clothing. </p>
+  <p class="mb-3"><i class="fa-brands fa-php fa-2xl"></i> <i class="fa-brands fa-js fa-2xl"></i> <i class="fa-brands fa-html5 fa-2xl"></i> <i class="fa-brands fa-css3-alt fa-2xl"></i></p>
+<a class="btn-project" href="https://www.youtube.com/watch?v=bdMaQM3RW_w&t=2s" target="_blank">Preview</a>
+</div>
+</div><br>
 
-            <div id="iframeContainer">
-                <button id="closeButton" onclick="closeIframe()">Close</button>
-                <iframe src="https://www.youtube.com/embed/bdMaQM3RW_w" frameborder="0" allowfullscreen></iframe>
-            </div>
+<!-- <div data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+<div class="skill-row">
+  <img class="skill-image-right" src="Images/wix.png" alt="computer">
+  <h3>Restaurant Website by Wix</h3>
+  <p class="portfolio-p">I modified the website that i created via HTML, CSS and converted it by using Web Builder which is Wix .</p>
+<a class="btn-project" href="https://anjhenvillanueva1.wixsite.com/my-site" target="_blank">Preview</a>
+</div>
+</div> -->
 
-        </div>
+<!-- <div data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+<div class="skill-row">
+  <img class="skill-image-left" src="Images/simon-game.png" alt="">
+  <h3>Simon Game</h3>
+  <p class="portfolio-p">A game of short-term memory skill.
+  This game creates a series of tones and lights and requires a user to repeat the sequence.</p>
+<a class="btn-project" href="https://simongame-anjhen.netlify.app/" target="_blank">Preview</a>
+</div>
+</div> -->
 
-    <div class="project-img">
-        <img src="./assets/images/blackshift.png" alt="">
-    </div>
+<div data-aos="fade-up"
+     data-aos-duration="3000"><h2> Personal Projects</h2></div>
 
+     <div data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+<div class="skill-row">
+  <img class="skill-image-left" src="Images/techstore.png" alt="">
+  <h3>Gadget Store</h3>
+  <p class="portfolio-p">A redesigned interface e-commerce website from my course project intended to market electronic devices.</p>
+<a class="btn-project" href="https://www.youtube.com/watch?v=f4CCJpG1fTc&t=77s" target="_blank">Preview</a>
+</div>
 </div>
 
-<!-- 2nd -->
-
-<div class="project-box">
-
-
-    <div class="project-img">
-        <img class="left" src="./assets/images/coffee.png" alt="">
-    </div>
-
-    <div class="project-text">
-        <h3>Coffee Website</h3>
-            <p>A coffee shop website is an online platform that showcases a coffee shop's offerings, atmosphere, and services.</p>
-            <div class="buttons button-project">
-
-                <button>View Project</button>
-            </div>
-        </div>
-
+<div data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+<div class="skill-row">
+  <img class="skill-image-right" src="Images/project4.png" alt="">
+  <h3>Clothing Business Website</h3>
+  <p class="portfolio-p">I've created A.V. Clothing, A website for clothing businesses using HTML and CSS only.</p>
+<a class="btn-project" href="https://avclothing.netlify.app/" target="_blank">Preview</a>
+</div>
 </div>
 
-<div class="project-box">
-    <div class="project-text">
-        <h3>Tech Store</h3>
-            <p>A gadget store website is an online platform designed to showcase and sell a wide range of electronic gadgets and tech accessories.</p>
-            <div class="buttons button-project">
-                <button onclick="showIframe()">View Project</button>
-            </div>
+<div data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+<div class="skill-row">
+  <img class="skill-image-left" src="Images/clock.png" alt="">
+  <h3>Digital Clock</h3>
+  <p class="portfolio-p">A digital clock using HTML, CSS and JavaScript.</p>
+<a class="btn-project" href="https://clock-by-anjhen.netlify.app/" target="_blank">Preview</a>
+</div>
+</div>
 
-            <div id="overlay" onclick="closeIframe()"></div>
+<div data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+<div class="skill-row">
+  <img class="skill-image-right" src="Images/project6.png" alt="">
+  <h3>Coffee Shop Website</h3>
+  <p class="portfolio-p">I've created a design for a coffee shop website using HTML, CSS and JavaScript .</p>
+<a class="btn-project" href="https://capaecoffee.netlify.app/" target="_blank">Preview</a>
+</div>
+</div>
 
-            <div id="iframeContainer">
-                <button id="closeButton" onclick="closeIframe()">Close</button>
-                <iframe src="" frameborder="0" allowfullscreen></iframe>
-            </div>
-
-        </div>
-
-    <div class="project-img">
-        <img src="./assets/images/gadget.png" alt="">
-    </div>
-
+<div data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+<div class="skill-row">
+  <img class="skill-image-left" src="Images/calcu.png" alt="">
+  <h3>Simple Calculator</h3>
+  <p class="portfolio-p">A Calculator using HTML, CSS and JavaScript.</p>
+<a class="btn-project" href="https://calculator-by-anjhen.netlify.app/" target="_blank">Preview</a>
+</div>
 </div>
 
 
-</section><br>
 
-<section class="container projects" id="">
-    <h2>Projects</h2>
-    <div class="underline"></div>
-
-    <div class="form-container">
-        <form action="/submit" method="post">
-
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            <div class="form-group">
-                <button type="submit">Submit</button>
-            </div>
-        </form>
-    </div>
-
-    </section>
+<div class="contact-me">
+  <div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom"><p>Get in Touch</p></div>
+     <div data-aos="fade-right"> <button  class="contact"><a href="Contact.html">Contact Me</a></button></div>
+</div>
 
 <footer>
-    <div class="social-icons" id="contact">
-        <a href="https://www.facebook.com/anjhen.villanueva.02" target="_blank" class="social-icon">
-            <i class="fa-brands fa-facebook"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/anjhen-villanueva-034610216/" target="_blank" class="social-icon">
-            <i class="fa-brands fa-linkedin-in"></i>
-        </a>
-        <a href="https://www.github.com" target="_blank" class="social-icon">
-            <i class="fa-brands fa-github"></i>
-        </a>
-    </div>
-    <div class="social-icons">
-        <p>Anjhen Villanueva 2024</p>
-    </div>
+<p>........</p>
+<p>I am looking forward to start a project with you!</p>
+
+<div class="social-icons">
+  <a href="https://www.facebook.com/anjhen.villanueva.02" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+  <a href="https://www.instagram.com/ajhn_vllnv/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+  <a href="https://www.linkedin.com/in/anjhen-villanueva-034610216/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+</div>
+<p class="copyright">Copyright © 2022 Anjhen Villanueva. All Rights Reserved.</p>
 </footer>
 
 
-<script src="./script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
 
-</body>
+  AOS.init({
+  disable: function() {
+    var maxWidth = 768;
+    return window.innerWidth < maxWidth;
+  }
+});
+</script>
+  </body>
 </html>
