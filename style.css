@@ -949,6 +949,11 @@ body{
 .about-container p{
   margin-right: 0px !important;
 }
+
+#triangle {
+display: none;
+}
+
 }
 
 @media (min-width: 2990px){
@@ -1000,9 +1005,9 @@ label{
   body{
 overflow-x: hidden;
   }
-  .model{
-display: none;
-  }
+  #triangle {
+    display: none;
+    }
   .about-container{
     height: 600px;
   }
@@ -1033,3 +1038,107 @@ height: 800px;
 }
 
 
+/* triangle logo */
+
+.cls-1 {
+  fill: #545454;
+  animation: cls1 4s ease infinite both;
+}
+
+@keyframes cls1 {
+  0% {
+    fill: #545454;
+  }
+
+  34% {
+    fill: #f9ba32;
+  }
+
+  66% {
+    fill: #ffffff;
+  }
+
+  100% {
+    fill: #545454;
+  }
+}
+
+.cls-1,
+.cls-2,
+.cls-3 {
+  stroke-width: 0px;
+}
+
+.cls-2 {
+  fill: #ffffff;
+  animation: cls2 4s ease infinite both;
+}
+
+@keyframes cls2 {
+  0% {
+    fill: #ffffff;
+  }
+
+  34% {
+    fill: #545454;
+  }
+
+  66% {
+    fill: #f9ba32;
+  }
+
+  100% {
+    fill: #ffffff;
+  }
+}
+
+.cls-3 {
+  fill: #f9ba32;
+  animation: cls3 4s ease infinite both;
+}
+
+@keyframes cls3 {
+  0% {
+    fill: #f9ba32;
+  }
+
+  34% {
+    fill: #ffffff;
+  }
+
+  66% {
+    fill: #545454;
+  }
+
+  100% {
+    fill: #f9ba32;
+  }
+}
+
+.cls-4 {
+  display: none;
+}
+
+#triangle {
+  height: 700px;
+  width: 700px;
+  animation: triangle 4s both infinite;
+  position:absolute;
+  bottom:100px;
+  left:60%;
+
+}
+
+@keyframes triangle {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
