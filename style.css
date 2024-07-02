@@ -59,7 +59,10 @@ height: 900px;
 height: 900px;
 }
 
-
+.card-img-top{
+  height: 300px;
+  width:330px;
+}
 
 
 .about-section{
@@ -293,6 +296,7 @@ cursor: context-menu;
   text-decoration: none;
   text-decoration: none;
 font-family: "Montserrat";
+
 }
 
 .down-cv:hover {
@@ -413,7 +417,6 @@ font-size:16px;
   text-align: center;
 justify-content: center;
 align-items: center;
-  margin-bottom: 50px;
   margin: auto;
   width: 100%;
   margin-left: 20px;
@@ -848,7 +851,6 @@ font-family: arial;
 
 .container{
 
-
 padding: 50px;
 border-radius: 1px;
 height: 600px;
@@ -857,6 +859,18 @@ margin: auto;
 margin-top: 50px;
 border-radius: 50px;
 }
+
+.container2{
+  padding: 20px;
+  height: auto;
+width: 75%;
+  margin: auto;
+
+
+  }
+
+
+
     .container h1{
 font-family: "Montserrat";
 font-size: 30px;
