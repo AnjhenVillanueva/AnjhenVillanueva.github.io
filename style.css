@@ -854,7 +854,7 @@ font-family: arial;
 
 padding: 50px;
 border-radius: 1px;
-height: 600px;
+height: auto;
 width: 25%;
 margin: auto;
 margin-top: 50px;
@@ -1142,4 +1142,11 @@ height: 800px;
   100% {
     transform: translateY(0px);
   }
+}
+
+
+
+.modal-body {
+  width: 100%; /* Adjust as needed to make the image bigger */
+  height: auto; /* Maintain aspect ratio */
 }
